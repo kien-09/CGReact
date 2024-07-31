@@ -6,10 +6,7 @@ export default class Tinhtoan extends Component {
         this.state = {
             num1: parseFloat(''),
             num2: parseFloat(''),
-            tong: '',
-            hieu: '',
-            tich: '',
-            thuong: ''
+            ketqua: '',
         }
     }
     render() {
@@ -24,31 +21,27 @@ export default class Tinhtoan extends Component {
                     this.setState({num2: parseFloat(e.target.value)})
                 }}/>
                 <br/>
-                <button value={this.state.tong} onClick={() => {
-                    this.setState({tong: this.state.num1 + this.state.num2})
-                }}>Tổng
+                <button value={this.state.ketqua} onClick={() => {
+                    this.setState({ketqua: this.state.num1 + this.state.num2})
+                }}>+
                 </button>
-                <button value={this.state.hieu} onClick={() => {
-                    this.setState({hieu: this.state.num1 - this.state.num2})
-                }}>Hiệu
+                <button value={this.state.ketqua} onClick={() => {
+                    this.setState({ketqua: this.state.num1 - this.state.num2})
+                }}>-
                 </button>
-                <button value={this.state.tich} onClick={() => {
-                    this.setState({tich: this.state.num1 * this.state.num2})
-                }}>Tích
+                <button value={this.state.ketqua} onClick={() => {
+                    this.setState({ketqua: this.state.num1 * this.state.num2})
+                }}>x
                 </button>
-                <button value={this.state.thuong} onClick={() => {
-                    this.setState({thuong: this.state.num1 / this.state.num2})
-                }}>Thương
+                <button value={this.state.ketqua} onClick={() => {
+                    this.setState({ketqua: this.state.num1 / this.state.num2})
+                }}>/
                 </button>
                 <button onClick={() => {
-                    this.setState({num1:'',num2:'',tong:'',hieu:'',tich:'',thuong:''})
+                    this.setState({num1:'',num2:'',ketqua:''})
                 }}>Clear
                 </button>
-                <h1>Kết quả</h1>
-                <h2>Tổng: {this.state.tong}</h2>
-                <h2>Hiệu: {this.state.hieu}</h2>
-                <h2>Tích: {this.state.tich}</h2>
-                <h2>Thương: {this.state.thuong}</h2>
+                <h1>Kết quả: {this.state.ketqua}</h1>
             </>
         )
     }

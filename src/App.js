@@ -1,14 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Kien from "./Kien";
-import Demo from "./Demo";
-import DemoClass from "./DemoClass";
-import Tinhtoan from "./Baitap";
+import Covid from "./Covid";
+import {FComponent} from "./FComponent";
+import {ProductF} from "./ProductF";
+import {Quocgia} from "./Quocgia";
+import {List} from "./Bài tập/List";
 
 
 function App() {
   return (
-      <Tinhtoan></Tinhtoan>
+      <List></List>
   );
 }
 
