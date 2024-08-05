@@ -3,18 +3,18 @@ import Covid from "./Covid";
 import {FComponent} from "./FComponent";
 import {ProductF} from "./ProductF";
 import {Quocgia} from "./Quocgia";
-import {List} from "./Bài tập/List";
+import {List} from "./Component/List";
 import {Link, Route, Routes} from "react-router-dom";
-import {Login} from "./Bài tập/Login";
-import {Home} from "./Bài tập/Home";
-import {Register} from "./Bài tập/Register";
-import {Products} from "./Bài tập/Products";
-import {Orders} from "./Bài tập/Orders";
-import {Admin} from "./Bài tập/Admin";
-import {Users} from "./Bài tập/Users";
-import {Students} from "./Bài tập/Students";
-import {Add} from "./Bài tập/Add";
-import {Detail} from "./Bài tập/Detail";
+import {Login} from "./Component/Login";
+import {Home} from "./Component/Home";
+import {Register} from "./Component/Register";
+import {Products} from "./Component/Products";
+import {Orders} from "./Component/Orders";
+import {Admin} from "./Component/Admin";
+import {Users} from "./Component/Users";
+import {Students} from "./Component/Students";
+import {Add} from "./Component/Add";
+import {Detail} from "./Component/Detail";
 
 
 function App() {
