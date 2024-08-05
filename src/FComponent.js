@@ -1,10 +1,12 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 export function FComponent() {
     let [a, setA] = useState(0);
     let [b, setB] = useState(0);
     let [kq, setKQ]=useState(0);
+    let navigate = useNavigate()
     useEffect(() => {
         axios.get('https://api-kent.netlify.app/.netlify/functions/api/vn').then(x => {
             console.log(x)
@@ -43,6 +45,9 @@ export function FComponent() {
             }}>/
             </button>
             <h1>Kết quả: {kq}</h1>
+            <button onClick={()=>{
+                navigate('/a')
+            }}>Sang trang A</button>
         </>
     )
 }

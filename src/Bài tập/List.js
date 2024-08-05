@@ -25,6 +25,26 @@ export function List() {
             setList(newList)
         }
     }
+    let sortBySore = (event) => {
+        let value = event.target.value;
+        if (value === "") {
+            getAll();
+            return;
+        }
+        if (value == "asc") {
+            let newList = [...list];
+            newList.sort((a, b) => {
+                return a.score - b.score;
+            });
+            setList(newList);
+        } else {
+            let newList = [...list];
+            newList.sort((a, b) => {
+                return b.score - a.score;
+            });
+            setList(newList);
+        }
+    }
     return (
         <>
             <h1>Danh sách học sinh</h1>
@@ -41,6 +61,11 @@ export function List() {
                 setList(findSocre)
             }}>Sắp xếp theo điểm giảm dần
             </button>
+            <select>
+                <option value="">Sắp xếp điểm</option>
+                <option value="asc">Tăng dần</option>
+                <option value="desc">Giảm dần</option>
+            </select>
             <table border={1}>
                 <tr>
                     <td>Id</td>

@@ -1,0 +1,52 @@
+.Home{
+    width: 1000px;
+    height: 800px;
+    margin: 80px 400px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    flex: 1;
+    border: 1px solid;
+    height: 100px;
+}
+.banner{
+    flex: 4;
+    border: 1px solid;
+    height: 100px;
+}
+.menu{
+    display: flex;
+    border: 1px solid;
+    height: 50px;
+    justify-content: space-between;
+}
+.menuleft, .menuright{
+    display: flex;
+}
+.menu-item{
+    border: 1px solid;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.main{
+    display: flex;
+    height: 640px;
+}
+.sidebar{
+    flex: 1;
+    height: 100%;
+    border: 1px solid;
+    text-align: center;
+}
+.content{
+    flex:5;
+    height: 100%;
+    border: 1px solid;
+    text-align: center;
+    line-height: 300px;
+}
