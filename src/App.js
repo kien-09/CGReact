@@ -38,6 +38,8 @@ function App() {
                     <Route path={'students/add'} element={<Add/>}/>
                     <Route path={'students/detail/x'} element={<Detail/>}/>
                     <Route path={'students'} element={<Students/>}>
+
+
                     </Route>
                 </Route>
             </Routes>
