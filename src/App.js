@@ -15,6 +15,12 @@ import {Users} from "./Component/Users";
 import {Students} from "./Component/Students";
 import {Add} from "./Component/Add";
 import {Detail} from "./Component/Detail";
+import {User} from "./Baitap68/User";
+import {HotProduct} from "./Baitap68/HotProduct";
+import {Homeuser} from "./Baitap68/Homeuser";
+import {Category} from "./Baitap68/Category";
+import {Detailuser} from "./Baitap68/Detailuser";
+import {Adminpage} from "./Baitap68/Adminpage";
 
 
 function App() {
@@ -26,22 +32,29 @@ function App() {
             {/*<Link to={'home'}>Page C</Link>*/}
             {/*<hr/>*/}
             <Routes>
-                <Route path={''} element={<Login/>}/>
-                <Route path={'register'} element={<Register/>}/>
-                <Route path={'home'} element={<Home/>}>
-                    <Route path={'products'} element={<Products/>}/>
-                    <Route path={'orders'} element={<Orders/>}/>
+                {/*<Route path={''} element={<Login/>}/>*/}
+                {/*<Route path={'register'} element={<Register/>}/>*/}
+                {/*<Route path={'home'} element={<Home/>}>*/}
+                {/*    <Route path={'products'} element={<Products/>}/>*/}
+                {/*    <Route path={'orders'} element={<Orders/>}/>*/}
+                {/*</Route>*/}
+                {/*<Route path={'admin'} element={<Admin/>}>*/}
+                {/*    <Route path={'products'} element={<Products/>}/>*/}
+                {/*    <Route path={'users'} element={<Users/>}/>*/}
+                {/*    <Route path={'students/add'} element={<Add/>}/>*/}
+                {/*    <Route path={'students/detail/x'} element={<Detail/>}/>*/}
+                {/*    <Route path={'students'} element={<Students/>}>*/}
+                {/*        */}
+                {/*        */}
+                {/*    </Route>*/}
+                {/*</Route>*/}
+                <Route path={'user'} element={<Homeuser/>}>
+                    <Route path={''} element={<User/>}></Route>
+                    <Route path={'hot-product'} element={<HotProduct/>}></Route>
+                    <Route path={'category'} element={<Category/>}></Route>
+                    <Route path={'detail-product'} element={<Detailuser/>}></Route>
                 </Route>
-                <Route path={'admin'} element={<Admin/>}>
-                    <Route path={'products'} element={<Products/>}/>
-                    <Route path={'users'} element={<Users/>}/>
-                    <Route path={'students/add'} element={<Add/>}/>
-                    <Route path={'students/detail/x'} element={<Detail/>}/>
-                    <Route path={'students'} element={<Students/>}>
-
-
-                    </Route>
-                </Route>
+                <Route path={'admin'} element={<Adminpage/>}></Route>
             </Routes>
         </>
     );
